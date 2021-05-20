@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int [] array = {10, 20, 330, 77, 12, 32, 56, 6, -1111, 66, 88, 99, 45, 24, 56778, 34534, 7890, -1231, 10};
+        int [] array = {10, 20,-1,  330, 77, 12, 32, 56, 6, -1111, 66, 88, 99, 45, 24, 56778, 34534, 7890, -1231, 1000};
 
         System.out.println("Sum of the array is: " + sumArray(array));
         System.out.println("Product of the array is: " + productArray(array));
@@ -20,5 +20,8 @@ public class Main {
         pairsOfArray(array);
         minMaxValuesOfArray(array);
         System.out.println("Sum of even elements is: "+sumEvenElements(array));
+        System.out.println("Average of the array is: " + averageArray(array));
+        System.out.println("Total nr. of elements greater than array average |"+averageArray(array)+"| is: " + valuesGreaterThan(array));
+        System.out.println("Nr. of elements out of interval is: " + elementsOutOfInterval(array));
     }
 }

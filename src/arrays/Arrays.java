@@ -190,4 +190,46 @@ public class Arrays {
         return sum;
     }
 
+    //Display how many of the elements are greater than the avg value of the array
+
+    public static int averageArray(int[]arr){
+        return sumArray(arr)/arr.length;
+    }
+
+    public static int valuesGreaterThan(int[]arr){
+    int countElemente = 0;
+        for (int i = 0; i <arr.length ; i++) {
+        if(averageArray(arr)<arr[i])
+            countElemente ++;
+    }
+        return countElemente;
+    }
+
+    // how many elements are out of the closed array determined by the first and last element.
+
+    //Method which checks if a number is in an interval
+    //Example:int[] example ={ 2 0.5 4 -1 -8 -3};
+    //Output: 2
+    //Explanation: 4, -8 are out of the interval 2, -3.
+    public static boolean numberInInterval(int firstNumber ,int lastNumber,int controlNumber){
+        if(firstNumber<lastNumber) {
+            return controlNumber > firstNumber && controlNumber < lastNumber;
+        }
+        return controlNumber<firstNumber&&controlNumber>lastNumber;
+    }
+
+    public static int elementsOutOfInterval(int[] arr){
+        int countElements = 0;
+        int firstNumber=arr[0];
+        int lastNumber=arr[arr.length-1];
+
+        for (int i = 0; i < arr.length; i++) {
+            if(numberInInterval(firstNumber, lastNumber, arr[i]))
+                countElements++;
+        }
+        return countElements;
+    }
+
+
+
 }
