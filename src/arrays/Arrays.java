@@ -229,6 +229,43 @@ public class Arrays {
         }
         return countElements;
     }
+    //Print elements from right to left
+    public static void elementsRightToLeft(int[] arr){
+
+        for (int i = 0; i < arr.length-1; i--) {
+            System.out.println("Elements from right to left are: " + arr[i]);
+        }
+    }
+    //Sum of the even values from array
+    public static int evenValues(int[] arr){
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]%2 == 0)
+                sum += arr[i];
+        }
+        return sum;
+    }
+    
+    //calculate the sum of values which are on odd positions on the array
+    public static int sumOddPositions(int[] arr){
+        int sumOfNumbersOddPositions = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (i%2 == 0)
+                sumOfNumbersOddPositions += arr[i];
+        }
+        return sumOfNumbersOddPositions;
+    }
+    //calculate the sum which divide with 10
+    public static int nrDividesWith10(int[] arr){
+        int countNumbersWhichDivide = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]%10 == 0)
+                countNumbersWhichDivide++;
+            
+        }
+        return countNumbersWhichDivide;
+    }
+    
 
 
 

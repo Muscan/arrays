@@ -23,5 +23,10 @@ public class Main {
         System.out.println("Average of the array is: " + averageArray(array));
         System.out.println("Total nr. of elements greater than array average |"+averageArray(array)+"| is: " + valuesGreaterThan(array));
         System.out.println("Nr. of elements out of interval is: " + elementsOutOfInterval(array));
+        elementsRightToLeft(array);
+        System.out.println("Even values are: " + evenValues(array));
+        System.out.println("Sum of odd positions " + sumOddPositions(array));
+        System.out.println("Numbers which divides with 10: " + nrDividesWith10(array));
+
     }
 }
