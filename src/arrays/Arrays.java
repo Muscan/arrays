@@ -231,9 +231,9 @@ public class Arrays {
     }
     //Print elements from right to left
     public static void elementsRightToLeft(int[] arr){
-
-        for (int i = 0; i < arr.length-1; i--) {
-            System.out.println("Elements from right to left are: " + arr[i]);
+        System.out.println("Elements from right to left are: ");
+        for (int i = arr.length-1; i >= 0;  i--) {
+            System.out.print(arr[i] + " ");
         }
     }
     //Sum of the even values from array

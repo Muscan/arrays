@@ -28,5 +28,6 @@ public class Main {
         System.out.println("Sum of odd positions " + sumOddPositions(array));
         System.out.println("Numbers which divides with 10: " + nrDividesWith10(array));
 
+
     }
 }
